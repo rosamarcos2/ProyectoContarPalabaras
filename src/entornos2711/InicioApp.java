@@ -21,15 +21,9 @@ public class InicioApp {
     public void setFrase(String frase) {
         this.frase = frase;
     }
-    
-    
-
     InicioApp(String frase) {
         this.frase=frase;
     }
-
-    
-
     public int contarCaracteresTotal(){
         texto=this.frase.replace(" ","");
         resultado=texto.length();
@@ -38,8 +32,7 @@ public class InicioApp {
     public int contarNumeroPalabras(){
         count=frase.split("\\s+|\n|,").length;
         return count;
-        }
-        
+        }    
     public int[] contarTodosCaracteres(char[] letras,int[] contador){
         int solu=0;
         for (int i=0;i<letras.length;i++){  
@@ -57,22 +50,7 @@ public class InicioApp {
         }
         return contador;
     }
-    public String textoCaracteresTotal(int contar){
-            return "El total de caracteres es : " + contar ;
-        }
-    public String textoNumeroPalabras(int total){
-        return "El total de numero de palabras es: " + total;
-    }
-    public String textoTodosCaracteres (char[] letras, int[] contador){
-        String resultado="";
-            for (int i=0;i<letras.length;i++){ 
-            if (contador[i]>0){
-                resultado+="Del caracter " + letras[i] + " hay una cantidad de : " + contador[i] + "\n";      
-                }
-            }
-                 return resultado;
-            
-    }
+    
     
     
 }

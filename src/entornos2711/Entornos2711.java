@@ -24,12 +24,13 @@ static Scanner sc = new Scanner(System.in);
         System.out.println("Introduce una frase: ");
         String frase=sc.nextLine();
         InicioApp frase1= new InicioApp(frase);
+        mostrar frase2= new mostrar();
         int total=frase1.contarCaracteresTotal();
         int cont=frase1.contarNumeroPalabras();
-        System.out.println(frase1.textoCaracteresTotal(total));      
-        System.out.println(frase1.textoNumeroPalabras(cont)); 
+        System.out.println(frase2.textoCaracteresTotal(total));      
+        System.out.println(frase2.textoNumeroPalabras(cont)); 
         frase1.contarTodosCaracteres(letras, contador);
-        System.out.println(frase1.textoTodosCaracteres(letras,contador));
+        System.out.println(frase2.textoTodosCaracteres(letras,contador));
         
         }
        
