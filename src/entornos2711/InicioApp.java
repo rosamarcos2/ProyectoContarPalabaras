@@ -14,14 +14,14 @@ public class InicioApp {
     int count;
     int resultado;
     String texto;
-    
+
     public String getFrase() {
         return frase;
     }
     public void setFrase(String frase) {
         this.frase = frase;
     }
-    InicioApp(String frase) {
+    public InicioApp(String frase) {
         this.frase=frase;
     }
     public int contarCaracteresTotal(){

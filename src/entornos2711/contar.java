@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author alumno
  */
-public class Entornos2711 {
+public class contar {
 static Scanner sc = new Scanner(System.in);
     /**
      * @param args the command line arguments
