@@ -7,32 +7,52 @@ package entornos2711;
 
 /**
  *
- * @author alumno
+ * @author Rosa
+ * @version 1.3
  */
 public class InicioApp {
+    
     private String frase;
     int count;
     int resultado;
     String texto;
-
+    
     public String getFrase() {
         return frase;
     }
     public void setFrase(String frase) {
         this.frase = frase;
     }
+    /**
+     * 
+     * @param frase 
+     */
     public InicioApp(String frase) {
         this.frase=frase;
     }
+    /**
+     * 
+     * @return total de caracteres
+     */
     public int contarCaracteresTotal(){
         texto=this.frase.replace(" ","");
         resultado=texto.length();
         return resultado;
     }
+    /**
+     * 
+     * @return total de palabras
+     */
     public int contarNumeroPalabras(){
         count=frase.split("\\s+|\n|,").length;
         return count;
         }    
+    /**
+     * 
+     * @param letras
+     * @param contador
+     * @return contador de letras
+     */
     public int[] contarTodosCaracteres(char[] letras,int[] contador){
         int solu=0;
         for (int i=0;i<letras.length;i++){  

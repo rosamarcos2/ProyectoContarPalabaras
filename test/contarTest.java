@@ -42,7 +42,6 @@ public class contarTest {
         int [] contador= new int[letras.length];
     InicioApp ob3= new InicioApp("hola");
     mostrar ob2= new mostrar();
-    
     assertTrue("hola".equals(ob3.getFrase()));
     ob3.setFrase("adios");
     assertTrue(ob3.contarCaracteresTotal() == 5);

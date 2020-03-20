@@ -7,15 +7,32 @@ package entornos2711;
 
 /**
  *
- * @author Usuario
+ * @author Rosa
+ * @version 1.3
  */
 public class mostrar {
+    /**
+     * 
+     * @param contar
+     * @return el total de caracteres
+     */
     public String textoCaracteresTotal(int contar){
             return "El total de caracteres es : " + contar ;
         }
+    /**
+     * 
+     * @param total
+     * @return total de palabras
+     */
     public String textoNumeroPalabras(int total){
         return "El total de numero de palabras es: " + total;
     }
+    /**
+     * 
+     * @param letras
+     * @param contador
+     * @return total de cada caracter
+     */
     public String textoTodosCaracteres (char[] letras, int[] contador){
         String resultado="";
             for (int i=0;i<letras.length;i++){ 

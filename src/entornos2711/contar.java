@@ -9,7 +9,8 @@ import java.util.Scanner;
 
 /**
  *
- * @author alumno
+ * @author Rosa
+ * @version 1.3
  */
 public class contar {
 static Scanner sc = new Scanner(System.in);
