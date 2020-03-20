@@ -17,9 +17,18 @@ public class InicioApp {
     int resultado;
     String texto;
     
+    /**
+     *
+     * @return frase
+     */
     public String getFrase() {
         return frase;
     }
+
+    /**
+     *
+     * @param frase
+     */
     public void setFrase(String frase) {
         this.frase = frase;
     }
